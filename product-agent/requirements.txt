@@ -1,0 +1,3 @@
+# Product Analysis Strands Agent Dependencies
+bedrock-agentcore
+boto3

@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowInvokeProductAnalysisAgent",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock-agentcore:InvokeRuntime"
+      ],
+      "Resource": [
+        "arn:aws:bedrock-agentcore:us-west-2:853548971581:runtime/product_analysis_agent_kiro-DbG83rES5F"
+      ]
+    }
+  ]
+}
