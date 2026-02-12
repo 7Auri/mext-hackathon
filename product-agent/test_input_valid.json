@@ -1,0 +1,287 @@
+{
+  "tenantId": "farmasi",
+  "products": [
+    {
+      "productId": "TEST001",
+      "productName": "Premium Mascara Ultra Black",
+      "category": "MAKEUP",
+      "subcategory": "Mascara",
+      "brand": "Farmasi",
+      "season": "all",
+      "isSeasonal": false,
+      "seasonCode": "all",
+      "stock": 450,
+      "currentStock": 450,
+      "last30DaysSales": 180,
+      "cost": 45.00,
+      "unitCost": 45.00,
+      "basePrice": 89.90,
+      "unitPrice": 89.90,
+      "lifecycleStage": "MATURE",
+      "trendScore": 85,
+      "tags": ["mascara", "premium", "bestseller"],
+      "seasonalityRules": []
+    },
+    {
+      "productId": "TEST002",
+      "productName": "New Launch Serum",
+      "category": "SKINCARE",
+      "subcategory": "Serum",
+      "brand": "Farmasi",
+      "season": "all",
+      "isSeasonal": false,
+      "seasonCode": "all",
+      "stock": 200,
+      "currentStock": 200,
+      "last30DaysSales": 95,
+      "cost": 60.00,
+      "unitCost": 60.00,
+      "basePrice": 149.90,
+      "unitPrice": 149.90,
+      "lifecycleStage": "NEW",
+      "trendScore": 92,
+      "tags": ["serum", "new", "anti-aging"],
+      "seasonalityRules": []
+    },
+    {
+      "productId": "TEST003",
+      "productName": "Summer Sun Protection SPF 50",
+      "category": "SKINCARE",
+      "subcategory": "Sun Protection",
+      "brand": "Farmasi",
+      "season": "summer",
+      "isSeasonal": true,
+      "seasonCode": "SUMMER",
+      "stock": 180,
+      "currentStock": 180,
+      "last30DaysSales": 45,
+      "cost": 48.00,
+      "unitCost": 48.00,
+      "basePrice": 94.90,
+      "unitPrice": 94.90,
+      "lifecycleStage": "MATURE",
+      "trendScore": 68,
+      "tags": ["sunscreen", "spf50", "summer"],
+      "seasonalityRules": [
+        {
+          "ruleType": "SEASON_TAG",
+          "threshold": 0,
+          "thresholdText": "summer"
+        },
+        {
+          "ruleType": "HIGH_TEMP",
+          "threshold": 25,
+          "thresholdText": "temp > 25C"
+        }
+      ]
+    },
+    {
+      "productId": "TEST004",
+      "productName": "Winter Moisturizer Rich Cream",
+      "category": "SKINCARE",
+      "subcategory": "Moisturizer",
+      "brand": "Farmasi",
+      "season": "winter",
+      "isSeasonal": true,
+      "seasonCode": "WINTER",
+      "stock": 520,
+      "currentStock": 520,
+      "last30DaysSales": 240,
+      "cost": 52.00,
+      "unitCost": 52.00,
+      "basePrice": 104.90,
+      "unitPrice": 104.90,
+      "lifecycleStage": "MATURE",
+      "trendScore": 89,
+      "tags": ["moisturizer", "winter", "rich"],
+      "seasonalityRules": [
+        {
+          "ruleType": "SEASON_TAG",
+          "threshold": 0,
+          "thresholdText": "winter"
+        },
+        {
+          "ruleType": "LOW_TEMP",
+          "threshold": 15,
+          "thresholdText": "temp < 15C"
+        },
+        {
+          "ruleType": "HIGH_HUMIDITY",
+          "threshold": 60,
+          "thresholdText": "humidity > 60%"
+        }
+      ]
+    },
+    {
+      "productId": "TEST005",
+      "productName": "Budget Shampoo 500ml",
+      "category": "HAIRCARE",
+      "subcategory": "Shampoo",
+      "brand": "Farmasi",
+      "season": "all",
+      "isSeasonal": false,
+      "seasonCode": "all",
+      "stock": 850,
+      "currentStock": 850,
+      "last30DaysSales": 420,
+      "cost": 18.00,
+      "unitCost": 18.00,
+      "basePrice": 34.90,
+      "unitPrice": 34.90,
+      "lifecycleStage": "MATURE",
+      "trendScore": 90,
+      "tags": ["shampoo", "budget", "bestseller"],
+      "seasonalityRules": []
+    },
+    {
+      "productId": "TEST006",
+      "productName": "Premium Perfume EDP 100ml",
+      "category": "FRAGRANCE",
+      "subcategory": "Perfume",
+      "brand": "Farmasi",
+      "season": "all",
+      "isSeasonal": false,
+      "seasonCode": "all",
+      "stock": 120,
+      "currentStock": 120,
+      "last30DaysSales": 15,
+      "cost": 180.00,
+      "unitCost": 180.00,
+      "basePrice": 599.90,
+      "unitPrice": 599.90,
+      "lifecycleStage": "MATURE",
+      "trendScore": 75,
+      "tags": ["perfume", "premium", "luxury"],
+      "seasonalityRules": []
+    },
+    {
+      "productId": "TEST007",
+      "productName": "Declining Lipstick Old Shade",
+      "category": "MAKEUP",
+      "subcategory": "Lipstick",
+      "brand": "Farmasi",
+      "season": "all",
+      "isSeasonal": false,
+      "seasonCode": "all",
+      "stock": 680,
+      "currentStock": 680,
+      "last30DaysSales": 45,
+      "cost": 25.00,
+      "unitCost": 25.00,
+      "basePrice": 49.90,
+      "unitPrice": 49.90,
+      "lifecycleStage": "DECLINING",
+      "trendScore": 42,
+      "tags": ["lipstick", "clearance"],
+      "seasonalityRules": []
+    },
+    {
+      "productId": "TEST008",
+      "productName": "Mid-Range Face Cream",
+      "category": "SKINCARE",
+      "subcategory": "Face Cream",
+      "brand": "Farmasi",
+      "season": "all",
+      "isSeasonal": false,
+      "seasonCode": "all",
+      "stock": 320,
+      "currentStock": 320,
+      "last30DaysSales": 140,
+      "cost": 85.00,
+      "unitCost": 85.00,
+      "basePrice": 299.90,
+      "unitPrice": 299.90,
+      "lifecycleStage": "MATURE",
+      "trendScore": 72,
+      "tags": ["face-cream", "mid-range"],
+      "seasonalityRules": []
+    }
+  ],
+  "orderHistory": [
+    {
+      "orderId": "ORD001",
+      "orderDate": "2024-01-15",
+      "items": [
+        {"productId": "TEST001", "quantity": 2},
+        {"productId": "TEST005", "quantity": 5}
+      ]
+    },
+    {
+      "orderId": "ORD002",
+      "orderDate": "2024-01-20",
+      "items": [
+        {"productId": "TEST002", "quantity": 3},
+        {"productId": "TEST004", "quantity": 8}
+      ]
+    },
+    {
+      "orderId": "ORD003",
+      "orderDate": "2024-02-01",
+      "items": [
+        {"productId": "TEST001", "quantity": 6},
+        {"productId": "TEST005", "quantity": 14}
+      ]
+    },
+    {
+      "orderId": "ORD004",
+      "orderDate": "2024-02-10",
+      "items": [
+        {"productId": "TEST003", "quantity": 1},
+        {"productId": "TEST006", "quantity": 1}
+      ]
+    },
+    {
+      "orderId": "ORD005",
+      "orderDate": "2024-02-15",
+      "items": [
+        {"productId": "TEST004", "quantity": 8},
+        {"productId": "TEST008", "quantity": 5}
+      ]
+    },
+    {
+      "orderId": "ORD006",
+      "orderDate": "2024-03-01",
+      "items": [
+        {"productId": "TEST002", "quantity": 3},
+        {"productId": "TEST005", "quantity": 15}
+      ]
+    },
+    {
+      "orderId": "ORD007",
+      "orderDate": "2024-03-10",
+      "items": [
+        {"productId": "TEST001", "quantity": 5},
+        {"productId": "TEST007", "quantity": 2}
+      ]
+    },
+    {
+      "orderId": "ORD008",
+      "orderDate": "2024-03-20",
+      "items": [
+        {"productId": "TEST004", "quantity": 8},
+        {"productId": "TEST008", "quantity": 4}
+      ]
+    }
+  ],
+  "currentMonth": 3,
+  "climateData": {
+    "Istanbul": {
+      "humidityPct": 72.5,
+      "avgTempC": 12.3,
+      "rainfallMm": 85.2,
+      "seasonTag": "winter"
+    },
+    "Antalya": {
+      "humidityPct": 65.0,
+      "avgTempC": 18.5,
+      "rainfallMm": 45.0,
+      "seasonTag": "spring"
+    },
+    "Izmir": {
+      "humidityPct": 68.0,
+      "avgTempC": 14.8,
+      "rainfallMm": 62.5,
+      "seasonTag": "winter"
+    }
+  }
+}

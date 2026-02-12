@@ -1,0 +1,62 @@
+default_agent: product_analysis_agent_kiro
+agents:
+  product_analysis_agent_kiro:
+    name: product_analysis_agent_kiro
+    language: python
+    node_version: '20'
+    entrypoint: C:/Users/baris/Desktop/hackathon-project/product_analysis_agent.py
+    deployment_type: container
+    runtime_type: null
+    platform: linux/arm64
+    container_runtime: none
+    source_path: C:\Users\baris\Desktop\hackathon-project
+    aws:
+      execution_role: arn:aws:iam::853548971581:role/AmazonBedrockAgentCoreSDKRuntime-us-west-2-27930069dd
+      execution_role_auto_create: false
+      account: '853548971581'
+      region: us-west-2
+      ecr_repository: 853548971581.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-product_analysis_agent_kiro
+      ecr_auto_create: false
+      s3_path: null
+      s3_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+        network_mode_config: null
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+      lifecycle_configuration:
+        idle_runtime_session_timeout: null
+        max_lifetime: null
+    bedrock_agentcore:
+      agent_id: product_analysis_agent_kiro-DbG83rES5F
+      agent_arn: arn:aws:bedrock-agentcore:us-west-2:853548971581:runtime/product_analysis_agent_kiro-DbG83rES5F
+      agent_session_id: null
+    codebuild:
+      project_name: bedrock-agentcore-product_analysis_agent_kiro-builder
+      execution_role: arn:aws:iam::853548971581:role/AmazonBedrockAgentCoreSDKCodeBuild-us-west-2-27930069dd
+      source_bucket: bedrock-agentcore-codebuild-sources-853548971581-us-west-2
+    memory:
+      mode: STM_ONLY
+      memory_id: product_analysis_agent_kiro_mem-Ypo7PD3UlH
+      memory_arn: arn:aws:bedrock-agentcore:us-west-2:853548971581:memory/product_analysis_agent_kiro_mem-Ypo7PD3UlH
+      memory_name: product_analysis_agent_kiro_mem
+      event_expiry_days: 30
+      first_invoke_memory_check_done: true
+      was_created_by_toolkit: true
+    identity:
+      credential_providers: []
+      workload: null
+    aws_jwt:
+      enabled: false
+      audiences: []
+      signing_algorithm: ES384
+      issuer_url: null
+      duration_seconds: 300
+    authorizer_configuration: null
+    request_header_configuration: null
+    oauth_configuration: null
+    api_key_env_var_name: null
+    api_key_credential_provider_name: null
+    is_generated_by_agentcore_create: false
