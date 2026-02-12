@@ -77,6 +77,16 @@ aws logs tail /aws/bedrock-agentcore/runtimes/customer_segment_agent-1GD3a24jRt-
 
 This agent is designed to be called by other agents or orchestrators. See the [Integration Guide](docs/INTEGRATION_GUIDE.md) for detailed instructions.
 
+### 🔐 Cross-Account Access
+
+By default, the agent is only accessible from the AWS account where it's deployed (485169707250). To allow other AWS accounts or users to access it:
+
+- **Option 1:** IAM Cross-Account Access - Grant specific AWS accounts permission
+- **Option 2:** API Gateway + Lambda - Expose via HTTP endpoint
+- **Option 3:** Share Code - Let them deploy their own instance
+
+See [Cross-Account Access Guide](docs/CROSS_ACCOUNT_ACCESS.md) for detailed setup instructions.
+
 ### Quick Integration Example
 
 ```python
