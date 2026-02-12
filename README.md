@@ -155,7 +155,7 @@ aws logs tail /aws/bedrock-agentcore/runtimes/customer_segment_agent-1GD3a24jRt-
 agentcore invoke '{"customerData": {...}}'
 
 # Or use the test script
-python performance_test_pure.py
+python tests/performance_test_pure.py
 ```
 
 ### Response Format
@@ -192,13 +192,13 @@ python performance_test_pure.py
 
 ```bash
 # Run performance test (20 customers)
-python performance_test_pure.py
+python tests/performance_test_pure.py
 
 # Test deployed agent
-python test_deployed_agent_20.py
+python tests/test_deployed_agent_20.py
 
 # Quick shell test
-./test_aws_deployed_quick.sh
+./tests/test_aws_deployed_quick.sh
 ```
 
 ## 📊 Performance Metrics
@@ -218,17 +218,35 @@ python test_deployed_agent_20.py
 ├── customer_segment_agent.py      # Main agent code
 ├── .bedrock_agentcore.yaml        # Deployment config
 ├── requirements.txt               # Dependencies
-├── database_schema.sql            # Database schema
-├── mock-data/                     # Test data
-│   ├── regions.json
-│   ├── tenants.json
-│   └── farmasi/
-│       ├── customers.json
-│       ├── customers-100.json
-│       └── products.json
-├── example-request*.json          # Request examples
-├── example-response*.json         # Response examples
-└── performance_test_*.py          # Test scripts
+├── README.md                      # Documentation
+│
+├── examples/                      # Request/Response examples
+│   ├── example-request.json
+│   ├── example-request-new-customer.json
+│   ├── example-request-region.json
+│   ├── example-response.json
+│   ├── example-response-new-customer.json
+│   ├── example-response-region.json
+│   ├── example-user.json
+│   └── example-user-segment.json
+│
+├── tests/                         # Test scripts
+│   ├── performance_test_pure.py
+│   ├── performance_test_20_customers.py
+│   ├── test_deployed_agent_20.py
+│   └── test_aws_deployed_quick.sh
+│
+├── schemas/                       # Database schemas
+│   ├── database_schema.sql        # MySQL schema
+│   └── mongodb_schema.js          # MongoDB schema
+│
+└── mock-data/                     # Test data
+    ├── regions.json
+    ├── tenants.json
+    └── farmasi/
+        ├── customers.json
+        ├── customers-100.json
+        └── products.json
 ```
 
 ## 🔍 Segmentation Logic
