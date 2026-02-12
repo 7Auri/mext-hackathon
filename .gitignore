@@ -76,6 +76,14 @@ temp/
 *.sqlite
 *.sqlite3
 
+# Node / Next.js (apps/web)
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
 # OS
 Thumbs.db
 .DS_Store
